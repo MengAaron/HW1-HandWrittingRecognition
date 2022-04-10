@@ -32,24 +32,27 @@ python mnist.py
 You can change the yaml file in cfgs to change the configuration.
 See [fc2.yaml](./cfgs/fc2.yaml) for more detail.
 
+train the model
 ```bash
-python train.py --cfg_file ./cfgs/fc.yaml
+python main.py --mode train --cfg_file ./cfgs/fc.yaml
+```
+
+test the model
+```bash
+python main.py --mode test --cfg_file ./cfgs/fc.yaml
 ```
 
 ## result
-My result here!
-My screenshoot here!
+0.97 on test set.
 
 ## Room for Improvement
 Include areas you believe need improvement / could be improved. Also add TODOs for future development.
 
 Room for improvement:
-- Improvement to be done 1
-- Improvement to be done 2
+- CNN
+- more optimization algorithm
+- more loss function
 
-To do:
-- Feature to be added 1
-- Feature to be added 2
 
 
 ## Acknowledgements
