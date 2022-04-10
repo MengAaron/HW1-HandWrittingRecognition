@@ -2,19 +2,19 @@ MODEL:
     - name: linear_1
       type: linear
       in_features: 784
-      out_features: 400
+      out_features: &hidden 400
 
     - name: Relu1
       type: Relu
 
     - name: linear_2
       type: linear
-      in_features: 400
+      in_features: *hidden
       out_features: 10
 
 batch_size: 16
 lr: 0.0001
-decay: 0.001
+decay: 0
 lr_decay: 0.5
 loadfile: False
-epoch: 5
+epoch: 2
